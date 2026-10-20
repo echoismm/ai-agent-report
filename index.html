@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zhouxinhao — 个人主页</title>
-<meta name="description" content="Zhouxinhao 的个人主页：关于、项目、工具与经历。">
+<title>周鑫豪 | AI-Agent使用情况</title>
+<meta name="description" content="周鑫豪的 AI-Agent 使用报告：Trae、WorkBuddy（接入 DeepSeek V4.1 F）与 DSH 的实际使用体验。">
 <style>
   :root{
     --paper:#f6f3ec;
@@ -45,8 +45,8 @@
   .rail-top{display:flex;align-items:flex-start;justify-content:space-between;gap:16px}
   .name{
     writing-mode:vertical-rl;text-orientation:mixed;
-    font-family:var(--serif);font-size:clamp(34px,3.4vw,52px);
-    line-height:1;letter-spacing:.04em;font-weight:400;
+    font-family:var(--serif);font-size:clamp(38px,4.2vw,58px);
+    line-height:1;letter-spacing:.14em;font-weight:400;
   }
   .name em{font-style:normal;color:var(--accent)}
   .rail-meta{
@@ -203,26 +203,25 @@
 </style>
 </head>
 <body>
-
 <div class="layout">
 
   <!-- 左栏 -->
   <aside class="rail">
     <div class="rail-top">
-      <div class="name">Zhouxinhao<em>.</em></div>
-      <div class="rail-meta">Profile — Vol. 01</div>
+      <div class="name">周鑫豪<em>。</em></div>
+      <div class="rail-meta">AI-Agent — Usage Report</div>
     </div>
 
     <nav class="rail-nav">
-      <a href="#about"><span class="k">01</span> 关于</a>
-      <a href="#work"><span class="k">02</span> 项目</a>
-      <a href="#tools"><span class="k">03</span> 工具</a>
-      <a href="#journey"><span class="k">04</span> 经历</a>
-      <a href="#contact"><span class="k">05</span> 联系</a>
+      <a href="#about"><span class="k">01</span> 概览</a>
+      <a href="#work"><span class="k">02</span> 工具</a>
+      <a href="#tools"><span class="k">03</span> 体验</a>
+      <a href="#journey"><span class="k">04</span> 结论</a>
+      <a href="#contact"><span class="k">05</span> 备注</a>
     </nav>
 
     <div class="rail-foot">
-      <span class="dot"></span>现在可接受新项目<br>
+      <span class="dot"></span>当前主力：WorkBuddy + DSV4.1F<br>
       Shanghai · CST (UTC+8)
     </div>
   </aside>
@@ -231,47 +230,42 @@
   <main>
     <div class="inner">
 
-      <div class="eyebrow">Portfolio · 2026</div>
+      <div class="eyebrow">AI-Agent · 使用报告 · 2026</div>
 
-      <h1 class="lede">把复杂的事情<br>做<em class="mark" style="font-style:normal">清楚</em>，<br>再做得好看一点。</h1>
+      <h1 class="lede">从 Trae 到 DSH，<br>我把日常<br>搬进了<em class="mark" style="font-style:normal">智能体</em>。</h1>
 
-      <p class="sub">我是 <strong>Zhouxinhao</strong>，做界面与前端实现，也写一点工具和自动化脚本。偏好少而稳的技术栈：能用一个静态页面解决的问题，不引入一整套框架。</p>
+      <p class="sub">这是一份 <strong>ai-agent 使用报告</strong>：最早用 Trae 编写和检查代码，现在最常用的是在 WorkBuddy 里接入 <strong>DeepSeek V4.1 F</strong>，需要更细的控制时，直接打开 <strong>DSH</strong>。</p>
 
       <section class="sec" id="about">
         <div class="num">01</div>
         <div>
-          <h2>关于</h2>
-          <div class="hint">About</div>
-          <p>关注两件事：<strong>信息怎么排布</strong>，以及<strong>页面怎么在慢网络和旧设备上依然好用</strong>。喜欢先画结构再写样式，先量尺寸再谈动效。</p>
-          <p>工作之外会整理踩坑笔记，把“当时为什么这么改”写下来——半年后的自己是最需要这份笔记的读者。</p>
+          <h2>概览</h2>
+          <div class="hint">Overview</div>
+          <p>这段时间最大的变化，是从“<strong>帮我写</strong>”变成“<strong>替我跑</strong>”。过去把 AI 当补全工具：代码写完让它检查一遍，改完再让它看一遍；现在更多是把一整段流程交出去，人只在关键节点看结果。</p>
+          <p>路径也很清楚：<strong>Trae</strong> 负责编写和检查代码，顺手把网课里重复的播放流程自动化；<strong>WorkBuddy</strong> 接入 DeepSeek V4.1 F 之后成了日常主力；需要按任务改造环境时，用 <strong>DSH</strong> 直接搭。</p>
         </div>
       </section>
 
       <section class="sec" id="work">
         <div class="num">02</div>
         <div>
-          <h2>项目</h2>
-          <div class="hint">Selected work</div>
+          <h2>工具</h2>
+          <div class="hint">In use</div>
           <div class="list">
             <a class="item" href="#work">
-              <span class="t">排版实验 / Editorial Kit<span class="arw">↗</span></span>
-              <span class="y">2026</span>
-              <span class="d">一套纯 CSS 的杂志式版式组件：竖排标题、分栏正文、编号章节，无外部依赖，打印样式也一并处理。</span>
+              <span class="t">Trae<span class="arw">↗</span></span>
+              <span class="y">早期</span>
+              <span class="d">编写和检查代码是主要用途，也顺手把网课里那些重复的播放流程自动化了——省下的时间比写代码本身更值。</span>
             </a>
             <a class="item" href="#work">
-              <span class="t">静态站点生成流程<span class="arw">↗</span></span>
-              <span class="y">2026</span>
-              <span class="d">把 Markdown 笔记转成带目录与锚点的 HTML，部署在 GitHub Pages 上，一次构建、零服务器成本。</span>
+              <span class="t">WorkBuddy + DeepSeek V4.1 F<span class="arw">↗</span></span>
+              <span class="y">主力</span>
+              <span class="d">现在常用：在 WorkBuddy 里接入 Deepseek V4.1 F，日常的问答、写作、改代码基本都在这一处完成。</span>
             </a>
             <a class="item" href="#work">
-              <span class="t">数据看板小工具<span class="arw">↗</span></span>
-              <span class="y">2025</span>
-              <span class="d">读取本地 CSV，生成可离线打开的统计页；重点在键盘可操作与颜色对比度达标。</span>
-            </a>
-            <a class="item" href="#work">
-              <span class="t">自动化脚本集<span class="arw">↗</span></span>
-              <span class="y">2025</span>
-              <span class="d">批量重命名、图片压缩、目录结构校验，几条命令替掉重复的手工操作。</span>
+              <span class="t">DSH<span class="arw">↗</span></span>
+              <span class="y">现在</span>
+              <span class="d">直接使用：插件可以自定义工作环境，工具链、提示词、输出格式都按任务来拼，自由度明显更高。</span>
             </a>
           </div>
         </div>
@@ -280,14 +274,14 @@
       <section class="sec" id="tools">
         <div class="num">03</div>
         <div>
-          <h2>工具</h2>
-          <div class="hint">Stack &amp; craft</div>
+          <h2>使用体验</h2>
+          <div class="hint">Hands-on notes</div>
+          <p>三点最直接的感受。</p>
           <div class="def">
-            <div>Markup</div><div>HTML · CSS · 语义化结构</div>
-            <div>Script</div><div>JavaScript · 少量 Python</div>
-            <div>Workflow</div><div>Git · GitHub Pages · 命令行</div>
-            <div>Design</div><div>Grid · 字体排印 · 可访问性</div>
-            <div>Also</div><div>Markdown 写作 · 技术文档</div>
+            <div>自带模型</div><div>Trae 和 WorkBuddy 自带的模型有时效果不够理想，稍复杂的改写容易跑偏，得反复追问。</div>
+            <div>换个模型</div><div>相比之下 dsV4.1f 使用更加顺手：同样的提示词，输出更贴合预期，返工明显变少。</div>
+            <div>环境自由</div><div>dsh 引入插件自定义工作环境的模式更加自由，界面和流程都能按自己的习惯改。</div>
+            <div>代价</div><div>自由度的另一面是对提示词准确性的依赖度较高——说不清楚，它就做得不对。</div>
           </div>
         </div>
       </section>
@@ -295,20 +289,20 @@
       <section class="sec" id="journey">
         <div class="num">04</div>
         <div>
-          <h2>经历</h2>
-          <div class="hint">Timeline</div>
+          <h2>结论</h2>
+          <div class="hint">Takeaways</div>
           <ul class="tl">
             <li>
-              <div class="when">2026 — 现在</div>
-              <div class="what">独立接前端与静态站点项目，负责从结构设计到上线部署。</div>
+              <div class="when">先把工具用熟</div>
+              <div class="what">Trae 负责写和查，重复劳动交给自动化；工具的上限，往往取决于你让它跑多远。</div>
             </li>
             <li>
-              <div class="when">2025</div>
-              <div class="what">系统整理 CSS 布局与排版方法，沉淀成可复用的版式组件。</div>
+              <div class="when">模型比提示词更值得换</div>
+              <div class="what">自带模型不理想时，接一个更合适的模型（这里是 DSV4.1F），比反复打磨提示词见效更快。</div>
             </li>
             <li>
-              <div class="when">2024</div>
-              <div class="what">开始用 Git 管理个人项目，把零散笔记搬到版本化的仓库里。</div>
+              <div class="when">环境按任务搭</div>
+              <div class="what">任务越具体，dsh 的插件化收益越大；但要把需求写到“可执行”的程度，否则自由度反而变成不确定性。</div>
             </li>
           </ul>
         </div>
@@ -317,9 +311,9 @@
       <section class="sec" id="contact">
         <div class="num">05</div>
         <div>
-          <h2>联系</h2>
-          <div class="hint">Say hello</div>
-          <p>有新项目、或者只是想聊聊排版和实现思路，都可以直接发邮件。</p>
+          <h2>备注</h2>
+          <div class="hint">Notes</div>
+          <p>本页是个人使用记录，不构成推荐。工具与模型版本更新很快，文中的体验以当时的版本为准。</p>
           <a class="mail" href="mailto:hello@zhouxinhao.dev">hello@zhouxinhao.dev</a>
         </div>
       </section>
@@ -327,7 +321,7 @@
     </div>
 
     <div class="foot">
-      <div class="sig"><b>Zhouxinhao</b> · 手写 HTML/CSS，无框架无追踪</div>
+      <div class="sig"><b>周鑫豪</b> · AI-Agent 使用情况 · 纯静态页面</div>
       <div>© 2026 · Hosted on GitHub Pages</div>
     </div>
   </main>
