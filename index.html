@@ -130,6 +130,21 @@
   .def div:nth-child(even){color:#3d3830}
   .tagline{display:inline-block;margin-right:6px}
 
+  /* 截图 */
+  .shots{grid-column:1;display:grid;gap:10px;margin-top:16px}
+  .shots.two{grid-template-columns:1.3fr 1fr;align-items:start}
+  .shot{
+    margin:0;border:1px solid var(--line);border-radius:8px;overflow:hidden;
+    background:#fff;box-shadow:0 1px 2px rgba(25,23,20,.05);
+    transition:.22s;
+  }
+  .item:hover .shot{border-color:#c9c0ae}
+  .shot img{width:100%;height:auto;display:block}
+  .shot figcaption{
+    font-size:11.5px;line-height:1.6;color:var(--muted);
+    padding:7px 10px;border-top:1px solid var(--line);background:var(--paper);
+  }
+
   /* 时间线 */
   .tl{border-left:1px solid var(--line);padding-left:22px;margin-top:4px}
   .tl li{list-style:none;position:relative;padding-bottom:20px}
@@ -182,6 +197,7 @@
     .def div:nth-child(odd){padding-bottom:0;border:0}
     .def div:nth-child(even){border-bottom:1px solid var(--line)}
     .item{grid-template-columns:1fr}
+    .shots.two{grid-template-columns:1fr}
     .y{grid-row:auto;grid-column:1;order:-1;padding:0 0 2px}
     .foot{flex-direction:column;align-items:flex-start;padding:22px 22px 40px}
   }
@@ -217,7 +233,6 @@
       <a href="#work"><span class="k">02</span> 工具</a>
       <a href="#tools"><span class="k">03</span> 体验</a>
       <a href="#journey"><span class="k">04</span> 结论</a>
-      <a href="#contact"><span class="k">05</span> 备注</a>
     </nav>
 
     <div class="rail-foot">
@@ -256,16 +271,38 @@
               <span class="t">Trae<span class="arw">↗</span></span>
               <span class="y">早期</span>
               <span class="d">编写和检查代码是主要用途，也顺手把网课里那些重复的播放流程自动化了——省下的时间比写代码本身更值。</span>
+              <div class="shots two">
+                <figure class="shot">
+                  <img src="images/trae-ide.jpg" alt="Trae 工作界面：左侧任务列表，右侧 Python 代码与 AI 讲解" loading="lazy" width="1400" height="876">
+                  <figcaption>Trae：一边写代码，一边让 AI 解释报错和改法</figcaption>
+                </figure>
+                <figure class="shot">
+                  <img src="images/trae-browser.jpg" alt="AI 自动操作浏览器完成网课答题的过程" loading="lazy" width="784" height="1012">
+                  <figcaption>同一时期：网课答题交给它自动点选、逐题提交</figcaption>
+                </figure>
+              </div>
             </a>
             <a class="item" href="#work">
               <span class="t">WorkBuddy + DeepSeek V4.1 F<span class="arw">↗</span></span>
               <span class="y">主力</span>
               <span class="d">现在常用：在 WorkBuddy 里接入 Deepseek V4.1 F，日常的问答、写作、改代码基本都在这一处完成。</span>
+              <div class="shots">
+                <figure class="shot">
+                  <img src="images/workbuddy.jpg" alt="WorkBuddy 5.5.6 对话框，右下角显示 DeepSeek-V4.1-Flash" loading="lazy" width="1400" height="934">
+                  <figcaption>WorkBuddy 5.5.6 接入 DeepSeek-V4.1-Flash，逐轮拆解 while 循环为什么报错</figcaption>
+                </figure>
+              </div>
             </a>
             <a class="item" href="#work">
               <span class="t">DSH<span class="arw">↗</span></span>
               <span class="y">现在</span>
               <span class="d">直接使用：插件可以自定义工作环境，工具链、提示词、输出格式都按任务来拼，自由度明显更高。</span>
+              <div class="shots">
+                <figure class="shot">
+                  <img src="images/dsh.jpg" alt="DeepSeek Harness 界面：左侧插件与工作区，右侧运行命令与思考轨迹" loading="lazy" width="1400" height="777">
+                  <figcaption>DSH：插件 + 轨迹视图，装依赖、探网络、写脚本每一步都看得见</figcaption>
+                </figure>
+              </div>
             </a>
           </div>
         </div>
@@ -307,17 +344,6 @@
           </ul>
         </div>
       </section>
-
-      <section class="sec" id="contact">
-        <div class="num">05</div>
-        <div>
-          <h2>备注</h2>
-          <div class="hint">Notes</div>
-          <p>本页是个人使用记录，不构成推荐。工具与模型版本更新很快，文中的体验以当时的版本为准。</p>
-          <a class="mail" href="mailto:hello@zhouxinhao.dev">hello@zhouxinhao.dev</a>
-        </div>
-      </section>
-
     </div>
 
     <div class="foot">
